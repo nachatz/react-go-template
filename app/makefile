@@ -9,7 +9,7 @@ list:
 	echo Commands: init build run tidy fmt clean [install]
 
 init:
-	$(GOMOD) init github.com/nachatz/my-ai-maker/app
+	$(GOMOD) init github.com/nachatz/React-Go-Template
 
 build:
 	cd ./cmd && $(GOBUILD) -o ../$(BINARY_NAME)
