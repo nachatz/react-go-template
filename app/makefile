@@ -3,13 +3,13 @@ GOCMD    := go
 GOBUILD  := $(GOCMD) build
 GOMOD    := $(GOCMD) mod
 GOFMT    := $(GOCMD) fmt
-BINARY_NAME := my-ai-maker
+BINARY_NAME := my_app
 
 list: 
 	echo Commands: init build run tidy fmt clean [install]
 
 init:
-	$(GOMOD) init github.com/nachatz/React-Go-Template
+	$(GOMOD) init github.com/nachatz/React-Go-Template/app
 
 build:
 	cd ./cmd && $(GOBUILD) -o ../$(BINARY_NAME)

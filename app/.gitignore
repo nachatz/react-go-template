@@ -6,4 +6,4 @@ go.sum
 my-ai-maker
 
 # ignore env
-.env
+# .env
