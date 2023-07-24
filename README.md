@@ -6,4 +6,4 @@ Client side application built using React, Redux, & TailwindCSS. Clean and easy 
 
 ## Back-end
 
-Basic Golang backend with a sample endpoint at localhost:8080/v1/hello
+Basic Golang backend with a sample endpoint at localhost:8080/v1/jwt for generating auth tokens
