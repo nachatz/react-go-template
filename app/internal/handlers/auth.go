@@ -4,8 +4,8 @@ import (
 	"log"
 
 	"github.com/dgrijalva/jwt-go"
-	"github.com/nachatz/my-ai-maker/app/internal/models"
-	"github.com/nachatz/my-ai-maker/app/internal/utils"
+	"github.com/nachatz/React-Go-Template/app/internal/models"
+	"github.com/nachatz/React-Go-Template/app/internal/utils"
 
 	"net/http"
 	"time"

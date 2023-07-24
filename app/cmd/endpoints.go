@@ -8,11 +8,11 @@ import (
 	"golang.org/x/time/rate"
 
 	"github.com/go-chi/chi"
-	"github.com/nachatz/my-ai-maker/app/internal/api"
-	"github.com/nachatz/my-ai-maker/app/internal/config"
-	"github.com/nachatz/my-ai-maker/app/internal/handlers"
-	"github.com/nachatz/my-ai-maker/app/internal/middleware"
-	"github.com/nachatz/my-ai-maker/app/internal/models"
+	"github.com/nachatz/React-Go-Template/app/internal/api"
+	"github.com/nachatz/React-Go-Template/app/internal/config"
+	"github.com/nachatz/React-Go-Template/app/internal/handlers"
+	"github.com/nachatz/React-Go-Template/app/internal/middleware"
+	"github.com/nachatz/React-Go-Template/app/internal/models"
 )
 
 func InitRoutes(cfg *config.Config) http.Handler {

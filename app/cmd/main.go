@@ -4,7 +4,7 @@ import (
 	"log"
 
 	"github.com/joho/godotenv"
-	"github.com/nachatz/my-ai-maker/app/internal/config"
+	"github.com/nachatz/React-Go-Template/app/internal/config"
 )
 
 func main() {
