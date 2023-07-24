@@ -3,5 +3,4 @@ export const navigation = [
     { name: "Dashboard", href: "/dashboard", current: false },
     { name: "About", href: "/", current: false },
     { name: "Contact", href: "/", current: false },
-    { name: "LearnAI", href: "/", current: false },
 ];

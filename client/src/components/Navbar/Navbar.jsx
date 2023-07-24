@@ -1,5 +1,4 @@
 import React from "react";
-import Searchbar from "../Searchbar/Searchbar";
 import Profiles from "./Profiles/Profiles";
 import NavItems from "./NavItems/NavItems";
 import Loading from "../Loading/Loading";
@@ -14,10 +13,23 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 import "./Navbar.css";
 
+const setTimeLoading = (setIsLoading) => {
+  setTimeout(() => {
+    setIsLoading(false);
+  }, 2000);
+};
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-  const { isLoading } = useAuth0();
 
+  // set isLoading to false after 2 seconds
+  const [isLoading, setIsLoading] = useState(true);
+  setTimeLoading(setIsLoading);
+
+
+
+
+  // Navbar will follow the user's scroll
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 0;
@@ -55,7 +67,6 @@ export default function Navbar() {
                 <Loading auth={true} />
               ) : (
                 <>
-                  <Searchbar />
                   <Profiles />
                 </>
               )}

@@ -5,12 +5,23 @@ import { Fragment } from "react";
 import { classNames } from "../../../lib/utils/utils";
 import { Link } from "react-router-dom";
 
-import { useAuth0 } from "@auth0/auth0-react";
-
 import "../Navbar.css";
 
 export default function Profiles() {
-  const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
+  const isAuthenticated = true;
+  const user = {
+    name: "John Doe",
+    picture:
+      "https://cdn.iconscout.com/icon/premium/png-512-thumb/avatar-1810626-1536314.png?f=avif&w=256",
+  };
+
+  const logout = () => {
+    console.log("logout");
+  };
+
+  const login = () => {
+    console.log("login");
+  };
 
   return (
     <>
@@ -106,13 +117,13 @@ export default function Profiles() {
               aria-current="page"
               href="/"
             >
-              <button onClick={() => loginWithRedirect()}>Log in</button>
+              <button onClick={() => login()}>Log in</button>
             </a>
             <button
               to="/"
               className="relative inline-block text-black custom-link"
               aria-current="page"
-              onClick={() => loginWithRedirect()}
+              onClick={() => login()}
             >
               Sign Up
             </button>

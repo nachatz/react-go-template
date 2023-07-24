@@ -19,7 +19,7 @@ export default function Banner() {
         </div>
         <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2">
           <p className="text-sm leading-6 text-text-900">
-            <strong className="font-semibold">Modern ML</strong>
+            <strong className="font-semibold">Your Company</strong>
             <svg
               viewBox="0 0 2 2"
               className="mx-2 inline h-0.5 w-0.5 fill-current"
@@ -27,8 +27,7 @@ export default function Banner() {
             >
               <circle cx={1} cy={1} r={1} />
             </svg>
-            Register an account and cache your models for free. You'll be able
-            to navigate here to see predictions and productionalize your models
+            Register an account{" "}
           </p>
           <Link
             to="/"
