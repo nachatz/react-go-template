@@ -26,9 +26,6 @@ export default function Navbar() {
   const [isLoading, setIsLoading] = useState(true);
   setTimeLoading(setIsLoading);
 
-
-
-
   // Navbar will follow the user's scroll
   useEffect(() => {
     const handleScroll = () => {

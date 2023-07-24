@@ -6,7 +6,6 @@ import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
 import Navbar from "./components/Navbar/Navbar";
 
-
 function App() {
   return (
     <div className="min-h-screen bg-slate-50 ">
