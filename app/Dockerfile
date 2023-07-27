@@ -18,9 +18,9 @@ FROM alpine:latest
 WORKDIR /app
 
 # Copy the built executable from the previous stage
-COPY --from=builder /app/my-ai-maker .
+COPY --from=builder /app/go-backend .
 
 EXPOSE 8080
-ENTRYPOINT ["./my-ai-maker"]
+ENTRYPOINT ["./go-backend"]
 CMD ["main.go"]
 

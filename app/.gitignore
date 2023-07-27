@@ -3,7 +3,7 @@ go.mod
 go.sum
 
 # ignore build files
-my-ai-maker
+my_app
 
 # ignore env
 # .env
