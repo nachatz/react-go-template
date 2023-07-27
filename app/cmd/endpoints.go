@@ -31,6 +31,9 @@ func InitRoutes(cfg *config.Config) http.Handler {
 		handlers.GenerateJWTHandler(w, r, cfg.Auth.ClientSecret, cfg.Auth.ClientID)
 	})
 
+	// Add authenticated endpoints
+	// mux.With(middleware.JwtMiddleware(cfg.Auth.ClientSecret)).Post(...)
+
 	mux.MethodNotAllowed(methodNotAllowedHandler())
 
 	// log the names of all the endpoints in the router
