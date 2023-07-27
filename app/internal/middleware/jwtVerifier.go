@@ -9,11 +9,11 @@ import (
 	"github.com/dgrijalva/jwt-go"
 )
 
-func JwtMiddleware(next http.Handler, clientSecret string) http.Handler {
+func JwtMiddleware(next http.HandlerFunc, clientSecret string) http.HandlerFunc {
 	/* JwtMiddleware - Middleware function for JWT authentication.
-	   @Param next - The next http.Handler in the chain.
+	   @Param next - The next http.HandlerFunc in the chain.
 	   @Param clientSecret - The client secret key used for token verification.
-	   @Return http.Handler - The middleware handler.
+	   @Return http.HandlerFunc - The middleware handler.
 	*/
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 

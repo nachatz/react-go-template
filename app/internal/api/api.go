@@ -10,4 +10,5 @@ const (
 // API endpoints
 const (
 	EndpointAuthToken = EndpointSuffix + "/jwt"
+	EndpointHello     = EndpointSuffix + "/hello"
 )

@@ -32,7 +32,9 @@ func InitRoutes(cfg *config.Config) http.Handler {
 	})
 
 	// Add authenticated endpoints
-	// mux.With(middleware.JwtMiddleware(cfg.Auth.ClientSecret)).Post(...)
+	mux.Get(api.EndpointHello, func(w http.ResponseWriter, r *http.Request) {
+		middleware.JwtMiddleware(handlers.HelloHandler, cfg.Auth.ClientSecret).ServeHTTP(w, r)
+	})
 
 	mux.MethodNotAllowed(methodNotAllowedHandler())
 
