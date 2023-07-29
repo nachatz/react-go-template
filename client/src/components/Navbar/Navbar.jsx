@@ -9,7 +9,6 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { classNames } from "../../lib/utils/utils";
 import { navigation } from "./nav-options";
 import { Link } from "react-router-dom";
-import { useAuth0 } from "@auth0/auth0-react";
 
 import "./Navbar.css";
 
